@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--background: #242424;
+	}
+}
+
+@layer base {
+	* {
+		@apply bg-backgroundColor;
+	 }
+	 input {
+		 @apply bg-gray-950 rounded;
+	 }
+	 button {
+		 @apply border border-white px-2 py-1 hover:bg-gray-500
+	 }
+}
