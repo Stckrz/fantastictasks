@@ -4,13 +4,65 @@
 
 @layer base {
 	:root {
-		--background: #242424;
+		--background: 0 0% 100%;
+		--catBase: #24273a;
+		--catSurface: #363a4f;
+		--catOverlay: #8087a2;
+		--catText: #cad3f5;
+		--catSubText: #b8c0e0;
+		--catBlue: #8aadf4;
+		--catSky: #91d7e3;
+		--catGreen: #a6da95;
+		--catYellow: #eed49f;
+		--catRed: #ed8796;
+		--catPink: #f5bde6;
+		--catRose: #f4dbd6;
+	}
+}
+
+@layer utilities {
+	.bg-theme{
+		background-color: var(--background-color);
+	}
+	.text-theme{
+		color: var(--text-color);
+	}
+	.border-theme{
+		border-color: var(--border-color);
+	}
+	.button-theme{
+		background-color: var(--button-bg);
+		color: var(--button-text);
+		border: 2px solid var(--button-border);
+	}
+	.switch-theme{
+		background-color: var(--background-color)
+	}
+	.switch-background-theme{
+		background-color: var(--button-bg)
+	}
+	.switch-secondary{
+		background-color: var(--text-color)
+	}
+		
+	.spacing-small{
+		margin: 0.5rem;
+	}
+	.spacing-medium{
+		margin: 1rem;
+	}
+	.spacing-large{
+		margin: 2rem;
+	}
+	.translate-x-switch{
+		transform: translate(0.2rem, 0px);
 	}
 }
 
 @layer base {
 	* {
-		@apply bg-backgroundColor;
+		@apply bg-theme;
+		@apply text-theme;
 	 }
 	 input {
 		 @apply bg-gray-950 rounded;

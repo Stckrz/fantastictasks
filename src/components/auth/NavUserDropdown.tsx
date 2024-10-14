@@ -2,6 +2,7 @@ import { logout_user } from '@/lib/api/userApi';
 import React from 'react';
 import { useCookies } from 'react-cookie';
 import { Link } from 'react-router-dom'
+
 const NavUserDropdown: React.FC = () => {
 	const [cookie, removeCookie] = useCookies(['userInfo']);
 
@@ -14,11 +15,10 @@ const NavUserDropdown: React.FC = () => {
 		}
 
 	}
-
 	return (
-		<div className="flex flex-col items-center justify-center p-2  border absolute top-15 right-2 bg-backgroundColor">
+		<div className="flex flex-col items-center justify-center p-2 border border-theme absolute top-15 right-2">
 			<div className="flex gap-2 flex-col">
-				{cookie.userInfo?.username === undefined &&
+				{cookie.userInfo?.user === undefined &&
 					<div className="flex gap-2 flex-col h-full w-full">
 						<Link to="/register">
 							Register
@@ -29,9 +29,14 @@ const NavUserDropdown: React.FC = () => {
 					</div>
 				}
 				{cookie.userInfo?.token &&
-					<Link onClick={() => { logout_handler() }} to="/logout">
-						Logout
-					</Link>
+			<div className="flex gap-2 flex-col">
+						<Link to="/appearanceConfig">
+							{"Config"}
+						</Link>
+						<Link onClick={() => { logout_handler() }} to="/logout">
+							Logout
+						</Link>
+					</div>
 				}
 			</div>
 		</div>

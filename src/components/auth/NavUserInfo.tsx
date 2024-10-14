@@ -21,7 +21,7 @@ const NavUserInfo: React.FC = () => {
 	}, [dropdownRef]);
 
 	return (
-		<div ref={dropdownRef} className="p-2" onClick={() => { setDropdownShown(!dropdownShown) }}>
+		<div ref={dropdownRef} className="m-2" onClick={() => { setDropdownShown(!dropdownShown) }}>
 			{cookie.userInfo?.user ?
 				cookie.userInfo?.user
 				: 'Not logged in'

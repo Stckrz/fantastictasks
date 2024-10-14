@@ -34,7 +34,7 @@ export const login_user = async (username: string, password: string) => {
 			body: JSON.stringify(userLoginObject)
 		});
 		const data = await response.json()
-		console.log(data)
+		console.log("logindata", data)
 		return data;
 	} catch (error) {
 		console.log({ "error": `problem logging in: ${error}` });
