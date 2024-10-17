@@ -16,7 +16,7 @@ const NavUserDropdown: React.FC = () => {
 
 	}
 	return (
-		<div className="flex flex-col items-center justify-center p-2 border border-theme absolute top-15 right-2">
+		<div className="flex flex-col items-center justify-center p-2 border border-theme absolute top-15 right-2 surface-theme">
 			<div className="flex gap-2 flex-col">
 				{cookie.userInfo?.user === undefined &&
 					<div className="flex gap-2 flex-col h-full w-full">

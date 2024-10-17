@@ -29,7 +29,7 @@ const WidgetListItemView: React.FC<WidgetListItemViewProps> = ({ widget }) => {
 	}
 
 	return (
-		<div className="border border-theme w-full flex flex-col py-2">
+		<div className="border border-theme w-full flex flex-col py-2 surface-theme">
 			<div className="mx-2 text-xl">Type: {widget.widgetType}</div>
 			<div className="mx-2 text-xl">Title: {widget.todolist?.title}</div>
 			<div className="flex items-center space-x-2 mx-2 m-2 justify-between px-2">

@@ -17,12 +17,25 @@
 		--catRed: #ed8796;
 		--catPink: #f5bde6;
 		--catRose: #f4dbd6;
+
+		--coolMain: #222222;
+		--coolSurface: #1f2833;
+		--coolSurface2: #c5c6c7;
+		--coolBlue: #66FCF1;
+		--coolBlue2: #45A29E;
+
+		--warmMain: #EAE7DC;
+		--warmSurface: #D8C3A5;
+		--warmSurface2: #8E8D8A;
+		--warmInactive: #E98074;
+		--warmActive: #E85A4f;
+
 	}
 }
 
 @layer utilities {
 	.bg-theme{
-		background-color: var(--background-color);
+		background-color: var(--main-color);
 	}
 	.text-theme{
 		color: var(--text-color);
@@ -30,19 +43,35 @@
 	.border-theme{
 		border-color: var(--border-color);
 	}
+	.surface-theme{
+		background-color: var(--surface)
+	}
+	.content-theme{
+		background-color: var(--content-active);
+		color: var(--content-active);
+	}
+	.special-text-theme{
+		color: var(--content-active);
+	}
 	.button-theme{
-		background-color: var(--button-bg);
+		background-color: var(--content-active);
 		color: var(--button-text);
-		border: 2px solid var(--button-border);
+		/* border: 2px solid var(--button-border); */
+		border: 2px solid var(--content-inactive);
+	}
+	.input-theme{
+		background-color: var(--surface2);
+		color: var(--button-text)
 	}
 	.switch-theme{
-		background-color: var(--background-color)
+		background-color: var(--main-color);
+		
 	}
 	.switch-background-theme{
-		background-color: var(--button-bg)
+		background-color: var(--content-active)
 	}
 	.switch-secondary{
-		background-color: var(--text-color)
+		background-color: var(--content-inactive)
 	}
 		
 	.spacing-small{
@@ -61,7 +90,7 @@
 
 @layer base {
 	* {
-		@apply bg-theme;
+		/* @apply bg-theme; */
 		@apply text-theme;
 	 }
 	 input {

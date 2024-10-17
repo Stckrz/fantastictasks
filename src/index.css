@@ -12,37 +12,63 @@
 }
 
 .light {
-	--background-color: #f2f2f2;
+	--main-color: #f2f2f2;
 	--text-color: black;
 	--border-color: #5651a7;
-	--button-bg: #4f81c0;
+	--content-active: #4f81c0;
+	--content-inactive: var(--catBlue);
 	--button-text: white;
 	--button-border: transparent;
 }
 .dark {
 	
-	--background-color: #242424;
+	--main-color: #242424;
 	--text-color: #ffffff;
 	--border-color: #ffffff;
-	--button-bg: #4f81c0;
+	--content-active: #4f81c0;
+	--content-inactive: #6e81c0;
 	--button-text: white;
 	--button-border: transparent;
 }
 .catpuccin {
-	--background-color: var(--catBase);
+	--main-color: var(--catBase);
 	--text-color: var(--catText);
+	--content-active: var(--catRed);
+	--button-text: var(--catPink);
 	--border-color: var(--catSurface);
+	--button-bg: #4f81c0;
+	--button-text: black;
+	--button-border: transparent;
+}
+.pinky{
+	--main-color: var(--catRose);
+	--surface: var(--catSurface);
+	--surface2: var(--catOverlay);
+	--text-color: var(--catOverlay);
+	--border-color: var(--catSubText);
+	--content-active: var(--catBlue);
+	--content-inactive: var(--coolSky);
 	--button-bg: #4f81c0;
 	--button-text: white;
 	--button-border: transparent;
 }
-.pinky{
-	--background-color: var(--catRose);
-	--text-color: var(--catOverlay);
-	--border-color: var(--catOverlay);
-	--button-bg: #4f81c0;
-	--button-text: white;
-	--button-border: transparent;
+.cool{
+	--main-color: var(--coolMain);
+	--text-color: white;
+	--button-text: black;
+	--surface: var(--coolSurface);
+	--surface2: var(--coolSurface2);
+	--content-active: var(--coolBlue);
+	--content-inactive: var(--coolBlue2);
+}
+.warm{
+	--main-color: var(--warmMain);
+	--text-color: black;
+	--button-text: black;
+	--surface: var(--warmSurface);
+	--surface2: var(--warmSurface2);
+	--content-active: var(--warmActive);
+	--content-inactive: var(--warmInactive);
 }
 
 

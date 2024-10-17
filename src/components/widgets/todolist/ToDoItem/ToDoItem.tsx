@@ -23,7 +23,7 @@ const ToDoItem: React.FC<ToDoItemProps> = ({ item }) => {
 		<div
 			key={item.id} className={"flex flex-col border-b border-t border-theme"}
 		>
-			<div className="flex justify-between h-12 items-center">
+			<div className="flex justify-between h-12 items-center text-xl">
 				<div
 					onClick={complete_item_handler} >
 					{completed

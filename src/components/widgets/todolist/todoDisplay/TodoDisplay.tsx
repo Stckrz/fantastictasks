@@ -38,7 +38,7 @@ const TodoDisplay: React.FC<TodoDisplayProps> = ({ listId }) => {
 			<div>
 				{listObject &&
 					<div className="flex items-center h-12 justify-center">
-						<div className="">{listObject.title}</div>
+						<div className="text-xl">{listObject.title}</div>
 					</div>
 				}
 			</div>

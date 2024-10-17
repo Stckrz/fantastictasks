@@ -5,9 +5,9 @@ import Navbar from '@/components/navbar/Navbar';
 import Footer from '@/components/footer/Footer';
 const Layout: React.FC = () => {
 	return (
-		<div className="flex flex-col justify-between h-dvh w-dvw">
+		<div className="flex flex-col justify-between h-dvh w-dvw bg-theme">
 			<Navbar />
-			<div className="flex flex-grow"><Outlet /></div>
+			<div className="flex flex-grow bg-theme"><Outlet /></div>
 			<Footer />
 		</div>
 	)

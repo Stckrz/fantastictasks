@@ -15,6 +15,7 @@ import { ThemeProvider } from './ThemeContext';
 import WidgetCreationPage from './components/pages/widgets/WidgetCreationPage';
 import TodoCreation from './components/widgets/todolist/TodoCreation/TodoCreation';
 import WidgetListPage from './components/pages/widgets/widgetCreation/widgetListPage';
+import NotLoggedInPage from './components/pages/auth/NotLoggedIn';
 
 createRoot(document.getElementById('root')!).render(
 	<StrictMode>
@@ -27,6 +28,7 @@ createRoot(document.getElementById('root')!).render(
 						<Route path="login" element={<LoginPage />} />
 						<Route path="register" element={<RegisterPage />} />
 						<Route path="logout" element={<LoggedOutPage />} />
+						<Route path="notLoggedIn" element={<NotLoggedInPage />} />
 						<Route path="appearanceConfig" element={<AppearanceConfigPage />} />
 						<Route path="widgetCreation" element={<WidgetCreationPage />} />
 						<Route path="widgetList" element={<WidgetListPage />} />
